@@ -5,8 +5,8 @@
   "homepage": "https://github.com/webdriverio/cucumber-boilerplate",
   "main": "test/runner.js",
   "scripts": {
-    "test": "mocha test/support/init.js --require babel/register --reporter=spec --timeout=5000 --require=chai --no-timeouts",
-    "test:debug": "node-debug mocha test/support/init.js --reporter=spec --require=chai --no-timeouts"
+    "test": "mocha test/support/init.js --compilers js:babel/register --reporter=spec --timeout=5000 --require=chai --no-timeouts",
+    "test:debug": "node-debug _mocha test/support/init.js --compilers js:babel/register --reporter=spec --require=chai --no-timeouts"
   },
   "repository": {
     "type": "git",
